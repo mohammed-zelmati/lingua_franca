@@ -6,11 +6,11 @@ The Flask Translation App is a web-based application that allows users to transl
 
 ## Features
 
-- Real-time Translation: Translates text as the user types, with a debounce mechanism to optimize API calls.
-- Language Selection: Supports all languages available in Google Translate, with dropdowns for source and target languages.
-- Automatic Language Detection: Detects the input text's language when "Auto-detect" is selected.
-- Responsive Design: Adapts to various screen sizes, including mobile devices.
-- Aesthetic UI: Uses a clean, modern design with a gradient background, soft shadows, and smooth transitions.
+- **Real-time Translation**: Translates text as the user types, with a debounce mechanism to optimize API calls.
+- **Language Selection**: Supports all languages available in Google Translate, with dropdowns for source and target languages.
+- **Automatic Language Detection**: Detects the input text's language when "Auto-detect" is selected.
+- **Responsive Design**: Adapts to various screen sizes, including mobile devices.
+- **Asthetic UI**: Uses a clean, modern design with a gradient background, soft shadows, and smooth transitions.
 
 ## Project Structure
 
@@ -32,8 +32,8 @@ cd flask-translation-app
 python -m venv venv
 
 Activate the virtual environment:
-  . On Windows: venv\Scripts\activate
-  . On Linux/Mac: source venv/bin/activate
+  . **On Windows**: venv\Scripts\activate
+  . **On Linux/Mac**: source venv/bin/activate
 
 ### 3. Install Dependencies:
 pip install -r requirements.txt
@@ -59,11 +59,11 @@ The server will start on http://127.0.0.1:5000.
 - The translated text appears in the right textarea, which is read-only.
 
 ## Technical Details
-* Backend: Built with Flask, handling routes for the main page (/) and translation API endpoint (/translate).
-* Translation: Uses the googletrans Python library to communicate with the Google Translate API.
-* Frontend: HTML template (index.html) with CSS (style.css) for styling and JavaScript (script.js) for dynamic behavior.
-* Styling: Features a gradient background, rounded corners, and a responsive layout using Flexbox.
-* JavaScript: Implements a debounce mechanism to limit API requests during typing and handles AJAX calls to the /translate endpoint.
+* **Backend**: Built with Flask, handling routes for the main page (/) and translation API endpoint (/translate).
+* **Translation**: Uses the googletrans Python library to communicate with the Google Translate API.
+* **Frontend**: HTML template (index.html) with CSS (style.css) for styling and JavaScript (script.js) for dynamic behavior.
+* **Styling**: Features a gradient background, rounded corners, and a responsive layout using Flexbox.
+* **JavaScript**: Implements a debounce mechanism to limit API requests during typing and handles AJAX calls to the /translate endpoint.
 
 ## Troubleshooting
 
