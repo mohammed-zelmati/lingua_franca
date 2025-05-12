@@ -14,16 +14,7 @@ The Flask Translation App is a web-based application that allows users to transl
 
 ## Project Structure
 
-app/
-├── static/
-│   ├── css/
-│   │   └── style.css        
-│   └── js/
-│       └── script.js        
-├── templates/
-│   └── index.html           
-├── app.py                   
-└── requirements.txt         
+![Alt text](schema.png)       
 
 ## Prerequisites
 
