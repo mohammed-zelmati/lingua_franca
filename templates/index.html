@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingua Franca</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lingua Franca</h1>
+        <div class="translation-box">
+            <div class="text-area">
+                <select id="source-lang">
+                    <option value="auto">automatic detection</option>
+                    {% for code, name in languages.items() %}
+                        <option value="{{ code }}">{{ name }}</option>
+                    {% endfor %}
+                </select>
+                <textarea id="input-text" placeholder="Entrez le texte à traduire..."></textarea>
+                <span id="detected-lang"></span>
+            </div>
+            <div class="text-area">
+                <select id="target-lang">
+                    {% for code, name in languages.items() %}
+                        <option value="{{ code }}" {% if code == 'en' %}selected{% endif %}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+                <textarea id="output-text" readonly placeholder="Traduction..."></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

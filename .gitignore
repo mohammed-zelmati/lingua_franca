@@ -1,0 +1,15 @@
+# 1. créez une application Flask où l’utilisateur pourra écrire ce qu’il
+# souhaite dans un champ de texte à gauche et afficher la traduction de
+# ce texte dans un autre champ de texte à droite. 
+# L’utilisateur pourra donc choisir la langue d’entrée à gauche et la langue de sortie à droite.
+# Quand l’utilisateur ne connaît pas la langue du texte à traduire, la
+# fonctionnalité “détection automatique” pourra lui être utile.
+
+# 2. Vous vous connectez à l’API de traduction de Google depuis votre
+# script Python et vous lui envoyez le texte entré par l’utilisateur. Une fois
+# la réponse reçue de l’API, vous devrez l’envoyer à l’utilisateur (et
+# l’afficher bien sûr).
+
+# 3. Vous rendez votre interface utilisateur plus esthétique et agréable à
+# regarder à l’aide de feuilles de style en cascade et/ou d’un script
+# javascript. Définissez votre propre charte graphique.
